@@ -1,0 +1,60 @@
+{
+  "amg_urban": {
+    "per_class_iou": {
+      "1": 0.37114645793730067,
+      "2": 0.6320035703004827,
+      "3": 0.5477731679069316,
+      "4": 0.6028030499144417,
+      "5": 0.396731683832353,
+      "6": 0.521799209631451,
+      "7": 0.5652994791125809
+    },
+    "mean_iou": 0.5409225576020176
+  },
+  "oracle_urban": {
+    "per_class_iou": {
+      "1": 0.1953962610635933,
+      "2": 0.24748086069266992,
+      "3": 0.4638301916901056,
+      "4": 0.4249987646432938,
+      "5": 0.4001554740359416,
+      "6": 0.3611809407455641,
+      "7": 0.4442456603056632
+    },
+    "mean_iou": 0.3856618151190897
+  },
+  "amg_rural": {
+    "per_class_iou": {
+      "1": 0.3322161544256774,
+      "2": 0.48963655732137434,
+      "3": 0.24897361578446806,
+      "4": 0.7924032708001334,
+      "5": 0.41845171726401087,
+      "6": 0.11289608061289846,
+      "7": 0.6448126560707638
+    },
+    "mean_iou": 0.4356669299086107
+  },
+  "oracle_rural": {
+    "per_class_iou": {
+      "1": 0.46162474544313703,
+      "2": 0.1927929537733844,
+      "3": 0.3084886246281382,
+      "4": 0.4524962146135079,
+      "5": 0.27546904550934237,
+      "6": 0.08311426547890288,
+      "7": 0.5925295047279677
+    },
+    "mean_iou": 0.411768548482499
+  },
+  "metadata": {
+    "model": "facebook/sam2.1-hiera-large",
+    "subset_size": 20,
+    "split": "Val",
+    "amg_points_per_side": 32,
+    "amg_pred_iou_thresh": 0.7,
+    "amg_stability_thresh": 0.9,
+    "device": "cuda",
+    "notes": "AMG uses majority-vote class assignment from GT masks \u2014 this is a generous upper-bound, not a true zero-shot result. Oracle-prompted uses GT-derived point+box prompts \u2014 also not truly zero-shot. Both strategies show how well SAM2 mask shapes align with LoveDA ground truth when given perfect class/location info."
+  }
+}

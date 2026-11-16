@@ -1,0 +1,5 @@
+Model,Train Domain,In-domain mIoU,Cross-domain mIoU,Gap
+DeepLabV3-ResNet50,Rural,0.2637,0.3370,-0.0733
+DeepLabV3-ResNet50,Urban,0.3323,0.2017,0.1306
+SAM2 Fine-tuned,Rural,0.4384,0.4476,-0.0092
+SAM2 Fine-tuned,Urban,0.4346,0.3856,0.0490

@@ -1,0 +1,19 @@
+{
+  "Urban": {
+    "num_images": 1156,
+    "point_accuracy": 100.0,
+    "points_correct": 31461,
+    "points_total": 31461,
+    "avg_classes_per_image": 4.54
+  },
+  "Rural": {
+    "num_images": 1366,
+    "point_accuracy": 100.0,
+    "points_correct": 41344,
+    "points_total": 41344,
+    "avg_classes_per_image": 5.04
+  },
+  "overall_accuracy": 100.0,
+  "num_points_per_class": 5,
+  "seed": 42
+}
